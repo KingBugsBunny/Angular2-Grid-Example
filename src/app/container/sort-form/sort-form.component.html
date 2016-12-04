@@ -1,0 +1,12 @@
+<form name="myForm" novalidate>
+  <div class="form-control">
+    <label for="search">Search</label>
+    <input #input id="search" type="text" (input)="search.emit(input.value)">
+  </div>
+  <div class="form-control">
+    <select #select (input)="order.emit(select.value)">
+      <option value="+">Descending Order</option>
+      <option value="-">Ascending Order</option>
+    </select>
+  </div>
+</form>

@@ -1,0 +1,14 @@
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Type</th>
+      <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of rowData | orderBy : order | search: term">
+      <td>{{row.value}}</td>
+      <td>{{row.count}}</td>
+    </tr>
+    </tbody>
+  </table>

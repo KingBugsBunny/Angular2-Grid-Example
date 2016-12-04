@@ -1,0 +1,6 @@
+<div class="row">
+  <app-sort-form (search)="term = $event" (order)="order = $event"></app-sort-form>
+</div>
+<div class="row">
+  <app-table [rowData]="rowData" [term]="term" [order]="order"></app-table>
+</div>
